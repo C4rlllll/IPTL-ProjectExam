@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Voter Registration</title>
+  <base target="_top">
+  <link rel="stylesheet" href="regstyle.css">
+</head>
+
+<body>
+  <div class="registration-form">
+    <h2>Register to Vote</h2>
+    <form method="POST"
+      action="https://script.google.com/macros/s/AKfycbzqdxG3N88dBfUKDR2ryIFGzmjeWC2VIndKoouSw-8DUoU8Er5sxRFeU0G9uFsNvj5x/exec">
+
+      <label for="name">Full Name</label>
+      <input id="name" name="Full name" type="text" placeholder="Enter your full name" required>
+
+      <label for="age">Age</label>
+      <input id="age" name="Age" type="number" min="18" max="120" placeholder="18+" required>
+
+      <label for="nid">National ID Number</label>
+      <input id="nid" name="National ID Number" type="text" placeholder="Enter your National ID" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="Password" type="password" placeholder="Minimum 6 characters" required minlength="6">
+
+      <button type="submit" style="margin-top: 16px;">Register</button>
+    </form>
+    <p id="message"></p>
+  </div>
+</body>
+
+</html>

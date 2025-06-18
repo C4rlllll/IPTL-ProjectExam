@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voting System</title>
+  <link rel="stylesheet" href="mainStyle.css" />
+</head>
+
+<body>
+  <header>
+    <h1 id="welcomeMessage">Welcome, User</h1>
+    <a href="index.html" class="logout">Log out</a>
+  </header>
+
+  <form id="voteForm">
+    <section>
+      <h2>Presidential Candidates 🔥</h2>
+      <div class="grid-horizontal">
+        <label class="card-horizontal">
+          <input type="radio" name="president" value="HONTIVEROS, RISA" required />
+          <div class="card-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Risa_Hontiveros_2022.jpg" />
+            <div>
+              <span class="name">HONTIVEROS, RISA</span><br />
+              <span class="party">(IND)</span>
+            </div>
+          </div>
+        </label>
+        <label class="card-horizontal">
+          <input type="radio" name="president" value="ROBREDO, LENI" required />
+          <div class="card-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Leni_Robredo_Portrait.png" />
+            <div>
+              <span class="name">ROBREDO, LENI</span><br />
+              <span class="party">(LP)</span>
+            </div>
+          </div>
+        </label>
+        <label class="card-horizontal">
+          <input type="radio" name="president" value="LACSON, PING" required />
+          <div class="card-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Sen._Panfilo_M._Lacson_%28cropped%29.jpg" />
+            <div>
+              <span class="name">LACSON, PING</span><br />
+              <span class="party">(IND)</span>
+            </div>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2>Vice-Presidential Candidates 🔥</h2>
+      <div class="grid-horizontal">
+        <label class="card-horizontal">
+          <input type="radio" name="vicepresident" value="SOTTO, VICENTE" required />
+          <div class="card-content">
+            <img src="https://web.senate.gov.ph/senators/images/sotto.jpg" />
+            <div>
+              <span class="name">SOTTO, VICENTE</span><br />
+              <span class="party">(NPC)</span>
+            </div>
+          </div>
+        </label>
+        <label class="card-horizontal">
+          <input type="radio" name="vicepresident" value="DUTERTE, SARA" required />
+          <div class="card-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/VPSDPortrait_%28cropped%29_%283%29.jpg" />
+            <div>
+              <span class="name">DUTERTE, SARA</span><br />
+              <span class="party">(LAKAS)</span>
+            </div>
+          </div>
+        </label>
+        <label class="card-horizontal">
+          <input type="radio" name="vicepresident" value="ONG, WILLIE" required />
+          <div class="card-content">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Willie_Ong%2C_2018.jpg/640px-Willie_Ong%2C_2018.jpg" />
+            <div>
+              <span class="name">ONG, WILLIE</span><br />
+              <span class="party">(IND)</span>
+            </div>
+          </div>
+        </label>
+        <label class="card-horizontal">
+          <input type="radio" name="vicepresident" value="PIMENTEL, KOKO" required />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2024/07/koko-pimentel-senate-philippines-rappler-onthology-001-scaled.jpg" />
+            <div>
+              <span class="name">PIMENTEL, KOKO</span><br />
+              <span class="party">(NPC)</span>
+            </div>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2>Senatorial Candidates 🔥</h2>
+      <div class="grid-horizontal">
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="AQUINO, BAM" />
+          <div class="card-content">
+            <img src="https://worldfellows.yale.edu/wp-content/uploads/2022/08/Bam-Aquino.jpg-686x686.jpg" />
+            <div>
+              <span class="name">AQUINO, BAM</span><br />
+              <span class="party">(KNP)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="ARAMBULO, RONNEL" />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2025/01/ARAMBULO-RONNEL.jpg?fit=300%2C300" />
+            <div>
+              <span class="name">ARAMBULO, RONNEL</span><br />
+              <span class="party">(MKBYN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="BALLON, ROBERTO" />
+          <div class="card-content">
+            <img src="https://rmaward.asia/wp-content/uploads/2024/08/roberto-ballon-philippines.jpg" />
+            <div>
+              <span class="name">BALLON, ROBERTO</span><br />
+              <span class="party">(IND)</span>
+            </div>
+          </div>
+        </label>
+
+        <!-- SENATORIAL CONTINUATION -->
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="PANGILINAN, KIKO" />
+          <div class="card-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Senkikopangilinan.jpg" />
+            <div>
+              <span class="name">PANGILINAN, KIKO</span><br />
+              <span class="party">(LP)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="MENDOZA, HEIDI" />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2025/01/MENDOZA-HEIDI.jpg?fit=300%2C300" />
+            <div>
+              <span class="name">MENDOZA, HEIDI</span><br />
+              <span class="party">(IND)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="ADONIS, JEROME" />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2025/01/ADONIS-JEROME.jpg?fit=300%2C300&quality=100" />
+            <div>
+              <span class="name">ADONIS, JEROME</span><br />
+              <span class="party">(MKBYN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="ESPIRITU, LUKE" />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2025/01/ESPIRITU-LUKE.jpg?fit=300%2C300" />
+            <div>
+              <span class="name">ESPIRITU, LUKE</span><br />
+              <span class="party">(PLM)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="DE GUZMAN, KA LEODY" />
+          <div class="card-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Leody-de-Guzman-for-President.png" />
+            <div>
+              <span class="name">DE GUZMAN, KA LEODY</span><br />
+              <span class="party">(PLM)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="BROSAS, ARLENE" />
+          <div class="card-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Rep._Arlene_Brosas_%2819th_Congress%29.jpg" />
+            <div>
+              <span class="name">BROSAS, ARLENE</span><br />
+              <span class="party">(MKBYN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="BINAY, ABBY" />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2025/01/BINAY-ABBY.jpg?fit=300%2C300&resize=200%2C200" />
+            <div>
+              <span class="name">BINAY, ABBY</span><br />
+              <span class="party">(NPC)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="ANDAMO, NARS ALYN" />
+          <div class="card-content">
+            <img src="https://balitangklik.com/wp-content/uploads/2024/10/Alyn-1.jpg" />
+            <div>
+              <span class="name">ANDAMO, NARS ALYN</span><br />
+              <span class="party">(MKBYN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="BOSITA, COLONEL" />
+          <div class="card-content">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/76/Rep._Bonifacio_Bosita_%2819th_Congress%29.jpg" />
+            <div>
+              <span class="name">BOSITA, COLONEL</span><br />
+              <span class="party">(IND)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="BORJA REVILLA, RAMON, JR." />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2025/01/BONGREVILLA-BONG.jpg?fit=300%2C300&w=3840&q=75" />
+            <div>
+              <span class="name">BORJA REVILLA, RAMON, JR.</span><br />
+              <span class="party">(LAKAS)</span>
+            </div>
+          </div>
+        </label>
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="ABALOS, BENHUR" />
+          <div class="card-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST8StriqeWruGfUq4Ao-X5an9BLtUKTLeLuQ&s" />
+            <div>
+              <span class="name">ABALOS, BENHUR</span><br />
+              <span class="party">(PFP)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="CASIÑO, TEDDY" />
+          <div class="card-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkyG7y42lR1gIJJh48TaFkN4xFTCWnj9g9lw&s" />
+            <div>
+              <span class="name">CASIÑO, TEDDY</span><br />
+              <span class="party">(MKBYN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="CASTRO, TEACHER FRANCE" />
+          <div class="card-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQfv4_AXHikrepWkicWid6LtqSuA3ULw54A&s" />
+            <div>
+              <span class="name">CASTRO, TEACHER FRANCE</span><br />
+              <span class="party">(MKBYN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="BONDOC, JIMMY" />
+          <div class="card-content">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMTA1MjI1YmEtNjVhOS00OGU3LThmYjYtNjMwNGJlZjE5OWZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" />
+            <div>
+              <span class="name">BONDOC, JIMMY</span><br />
+              <span class="party">(PDPLBN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="ARELLANO, ERNESTO" />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2025/01/ARELLANO-ERNESTO.jpg?fit=300%2C300" />
+            <div>
+              <span class="name">ARELLANO, ERNESTO</span><br />
+              <span class="party">(KTPNAN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="MAZA, LIZA" />
+          <div class="card-content">
+            <img src="https://www.rappler.com/tachyon/2025/01/MAZA-LIZA.jpg?fit=300%2C300" />
+            <div>
+              <span class="name">MAZA, LIZA</span><br />
+              <span class="party">(MKBYN)</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="checkbox" name="senators" value="AMAD, WILSON" />
+          <div class="card-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS002A-UizEXalN4fcL4xYB6blnZ94RY3HCjg&s" />
+            <div>
+              <span class="name">AMAD, WILSON</span><br />
+              <span class="party">(IND)</span>
+            </div>
+          </div>
+        </label>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Partylist 🔥</h2>
+      <div class="grid-horizontal">
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="AKBAYAN PARTYLIST" required />
+          <div class="card-content">
+            <img
+              src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/28/55/af/2855af28-7ef0-c588-45db-ab47e20364d9/artwork.jpg/1200x630bb.jpg" />
+            <div>
+              <span class="name">AKBAYAN PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="MAMAMYANG LIBERAL PARTYLIST" required />
+          <div class="card-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9j0TXTiTOnwTYWUJmuKATaowZ4cifc-9SRw&s" />
+            <div>
+              <span class="name">MAMAMYANG LIBERAL PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="GABRIELA PARTYLIST" required />
+          <div class="card-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0J7h_MCLWSzb7K_hK3LTqu7qpOQ-AG1yLw&s" />
+            <div>
+              <span class="name">GABRIELA PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="KABATAAN PARTYLIST" required />
+          <div class="card-content">
+            <img src="https://pbs.twimg.com/media/GpRO-rZbYAIsqAN.jpg:large" />
+            <div>
+              <span class="name">KABATAAN PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="4ps" required />
+          <div class="card-content">
+            <img src="https://rmn.ph/wp-content/uploads/2019/10/4ps.jpg" />
+            <div>
+              <span class="name">4Ps PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="ACT-CIS" required />
+          <div class="card-content">
+            <img src="https://cdn.balita.net.ph/wp-content/uploads/2019/05/PARTYLIST_ONLINE.jpg" />
+            <div>
+              <span class="name">ACT-CIS PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="GP(Galing sa puso)" required />
+          <div class="card-content">
+            <img src="https://remate.ph/wp-content/uploads/2025/04/132-GP-PARTYLIST.jpg" />
+            <div>
+              <span class="name">GALING SA PUSO PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="PPP" required />
+          <div class="card-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPf-1Ef9pxhVWLZRCWJurjNcPvtqlJCgVH-g&s" />
+            <div>
+              <span class="name">PWERSA NG PILIPINONG PANDAGAT PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="AKO BICOL" required />
+          <div class="card-content">
+            <img src="https://the-post-assets.sgp1.digitaloceanspaces.com/2024/07/AKO-BICOL_thumbnail.jpg" />
+            <div>
+              <span class="name">AKO BICOL PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card-horizontal">
+          <input type="radio" name="partylist" value="TINGOG" required />
+          <div class="card-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCR0nnpBv0KMtPhHMb8EFLAZwaKmr1DoIolg&s" />
+            <div>
+              <span class="name">TINGOG PARTYLIST</span>
+            </div>
+          </div>
+        </label>
+
+      </div>
+    </section>
+
+
+    <div class="submit-container">
+      <button type="submit">Submit Vote</button>
+    </div>
+  </form>
+
+  <script src="mainScript.js"></script>
+</body>
+
+</html>
